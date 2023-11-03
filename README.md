@@ -16,13 +16,13 @@ The fields includes:
       loudness, mode, speechiness, instrumentalness, liveness, valence, tempo,
       duration_ms, time_signature
      
-  3. Penguin:
+3. Penguin:
 The data was from https://developer.penguinrandomhouse.com/io-docs. We used requests package to get json string then read and process the data.
 The fields includes:
       title, author, onsale (which is the date which it gets on sale),
 language, praises, authorBio, aboutTheBook, keynote, categories
   
-  The Analytical Goals:
+## The Analytical Goals:
 The primary analytical goal of this project is to develop a content-based recommender system for music that utilizes NYTimes, Penguin, and Spotify APIs to collect user engagement data and provide personalized recommendations.
 The system's analytical goals are to:
 1. Collect user engagement data:The system collects user engagement data from NY Times, Penguin, and Spotify APIs to understand user preferences and behavior. This data includes the articles read, songs played, and podcasts listened to by the user.

@@ -15,12 +15,16 @@ The fields includes:
       artist, album, track_name, track_id, danceability, energy, key,
       loudness, mode, speechiness, instrumentalness, liveness, valence, tempo,
       duration_ms, time_signature
+<img width="588" alt="image" src="https://github.com/joyhwang41/Song-Book-News-Content-Based-Recommendation-System/assets/109253819/55dc2f2a-6255-46ba-84eb-c07d8f2f8400">
+
      
-3. Penguin:
+4. Penguin:
 The data was from https://developer.penguinrandomhouse.com/io-docs. We used requests package to get json string then read and process the data.
 The fields includes:
       title, author, onsale (which is the date which it gets on sale),
 language, praises, authorBio, aboutTheBook, keynote, categories
+<img width="900" alt="image" src="https://github.com/joyhwang41/Song-Book-News-Content-Based-Recommendation-System/assets/109253819/c921f786-28d3-401c-9b5a-51068b3b27ab">
+
   
 ## The Analytical Goals:
 The primary analytical goal of this project is to develop a content-based recommender system for music that utilizes NYTimes, Penguin, and Spotify APIs to collect user engagement data and provide personalized recommendations.
@@ -74,13 +78,20 @@ Outcomes:
 We got a ROC = 0.99871 after evaluating the model in the validation set, and predict the labels of “positive” (1) or “negative” (0) using testset.
     
  2. Song to Book Recommendation
-User input:"I am listening to a love song" Outputs:
+User input:"I am listening to a love song"
+Outputs:
+<img width="631" alt="image" src="https://github.com/joyhwang41/Song-Book-News-Content-Based-Recommendation-System/assets/109253819/4020cfda-166b-45c8-8826-3777cae932f2">
+
 Based on my analysis, we found that the recommendation system was able to accurately identify relevant books based on a user's current song listening situation. For example, when the user input "I am listening to a love song", the system recommended books such as "Poems That Touch the Heart" and "Being a Green Mother", which have a high degree of similarity to the user's input based on the model.
-3. Book to Songs Recommendation
+
+4. Book to Songs Recommendation
 As an example, we used the book title "The Truelove Bride" as the user input and obtained the following top 10 song recommendations:
-User input:"The Truelove Bride" Outputs:
+User input:"The Truelove Bride"
+Outputs:
+<img width="601" alt="image" src="https://github.com/joyhwang41/Song-Book-News-Content-Based-Recommendation-System/assets/109253819/1ef842f6-1f03-4695-bf5c-c62a650724e6">
+
    
- 4. News to News Recommendation
+ 6. News to News Recommendation
 K-Means clustering algorithm was applied on the data to bucket the articles into 10 clusters, these clusters were generated from the content of the articles and future articles based on user engagement can be passed through the model to be clustered in a bucket, similar articles can then be suggested based on similar content.
 The model takes around 15-20 seconds to train on a feature.
 
